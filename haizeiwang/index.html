@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海贼王同人动漫-热门同人作品推荐与创作分享社区</title>
+    <meta name="description" content="海贼王同人动漫爱好者的聚集地，提供热门同人作品推荐、漫画连载、角色衍生故事、创作交流与同人图鉴分享，带你探索草帽一伙的无限可能。">
+    <meta name="keywords" content="海贼王同人动漫,海贼王同人,海贼王同人漫画,海贼王同人小说,海贼王二次创作,路飞同人,索隆同人,海贼王创作社区">
+    <link rel="stylesheet" href="data:text/css,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f3ee;
+            color: #2d2a26;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #0e1a2b 0%, #1a2f4a 100%);
+            padding: 16px 0;
+            border-bottom: 4px solid #e8b84b;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            font-size: 2rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        .logo-text {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+        .logo-text span {
+            color: #e8b84b;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            color: #cfd8e3;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 6px 2px;
+            transition: color 0.2s, border-bottom 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        .main-nav a:hover {
+            color: #e8b84b;
+            border-bottom-color: #e8b84b;
+        }
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            padding: 4px 8px 4px 16px;
+            max-width: 260px;
+        }
+        .header-search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 0.9rem;
+            width: 100%;
+            padding: 6px 0;
+        }
+        .header-search button {
+            background: #e8b84b;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #1a2f4a;
+            flex-shrink: 0;
+        }
+
+        /* 首屏 Hero */
+        .hero-section {
+            background: linear-gradient(145deg, #1a2f4a 0%, #2c4a6e 60%, #3a5f8a 100%);
+            color: #fff;
+            padding: 60px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            right: -20px;
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(232,184,75,0.25) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            letter-spacing: 1px;
+        }
+        .hero-content h1 span {
+            color: #e8b84b;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 28px;
+            max-width: 600px;
+        }
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .hero-badge {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            backdrop-filter: blur(4px);
+        }
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: #e8b84b;
+            color: #1a2f4a;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(232,184,75,0.4);
+        }
+        .btn-outline {
+            border: 2px solid #e8b84b;
+            color: #e8b84b;
+            padding: 10px 26px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-outline:hover {
+            background: #e8b84b;
+            color: #1a2f4a;
+        }
+        .hero-characters {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .char-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 20px 16px;
+            text-align: center;
+            width: 110px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: transform 0.3s;
+        }
+        .char-card:hover {
+            transform: translateY(-8px);
+        }
+        .char-avatar {
+            font-size: 3rem;
+            margin-bottom: 8px;
+        }
+        .char-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .char-role {
+            font-size: 0.75rem;
+            opacity: 0.7;
+        }
+
+        /* 页面主体 */
+        .main-content {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border-left: 5px solid #e8b84b;
+            padding-left: 16px;
+        }
+        .section-title h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a2f4a;
+        }
+        .section-title .more-link {
+            color: #1a2f4a;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .section-title .more-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* 热门作品 */
+        .hot-works {
+            margin-bottom: 60px;
+        }
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        .work-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .work-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+        .work-cover {
+            height: 180px;
+            background: linear-gradient(145deg, #2c4a6e, #1a2f4a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.2rem;
+            position: relative;
+        }
+        .work-card:nth-child(2n) .work-cover {
+            background: linear-gradient(145deg, #6e3a2c, #4a1f1a);
+        }
+        .work-card:nth-child(3n) .work-cover {
+            background: linear-gradient(145deg, #2c6e3a, #1a4a2f);
+        }
+        .work-card:nth-child(4n) .work-cover {
+            background: linear-gradient(145deg, #6e2c5a, #4a1a3a);
+        }
+        .work-card:nth-child(5n) .work-cover {
+            background: linear-gradient(145deg, #5a6e2c, #3a4a1a);
+        }
+        .work-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #e8b84b;
+            color: #1a2f4a;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .work-info {
+            padding: 14px;
+        }
+        .work-info h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1a2f4a;
+        }
+        .work-info .work-meta {
+            font-size: 0.82rem;
+            color: #8a8580;
+            margin-bottom: 8px;
+        }
+        .work-info .work-desc {
+            font-size: 0.85rem;
+            color: #5a5550;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 分类板块 */
+        .category-section {
+            margin-bottom: 60px;
+        }
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .category-pill {
+            background: #fff;
+            border: 2px solid #e0dcd5;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #2d2a26;
+        }
+        .category-pill:hover, .category-pill.active {
+            background: #1a2f4a;
+            color: #fff;
+            border-color: #1a2f4a;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .category-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            border-left: 4px solid #e8b84b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .category-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: #1a2f4a;
+        }
+        .category-item p {
+            font-size: 0.88rem;
+            color: #6a6560;
+            line-height: 1.7;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 14px;
+        }
+        .tag-list a {
+            background: #f0ece6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            color: #4a4540;
+            transition: background 0.2s;
+        }
+        .tag-list a:hover {
+            background: #e8b84b;
+            color: #1a2f4a;
+        }
+
+        /* 更新榜单 */
+        .update-section {
+            margin-bottom: 60px;
+        }
+        .update-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .update-list {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .update-item {
+            display: flex;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid #f0ece6;
+            gap: 16px;
+        }
+        .update-item:last-child {
+            border-bottom: none;
+        }
+        .update-rank {
+            background: #1a2f4a;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        .update-rank.top {
+            background: #e8b84b;
+            color: #1a2f4a;
+        }
+        .update-info {
+            flex: 1;
+        }
+        .update-info h4 {
+            font-size: 1rem;
+            margin-bottom: 2px;
+        }
+        .update-info .update-meta {
+            font-size: 0.8rem;
+            color: #8a8580;
+        }
+        .update-status {
+            background: #f0ece6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #1a2f4a;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* 排行榜 */
+        .ranking-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .ranking-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+            color: #1a2f4a;
+        }
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e5e0da;
+        }
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+        .ranking-num {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: #c0b8b0;
+            width: 30px;
+            text-align: center;
+        }
+        .ranking-item:nth-child(1) .ranking-num,
+        .ranking-item:nth-child(2) .ranking-num,
+        .ranking-item:nth-child(3) .ranking-num {
+            color: #e8b84b;
+        }
+        .ranking-title {
+            flex: 1;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .ranking-score {
+            font-size: 0.9rem;
+            color: #e8b84b;
+            font-weight: 700;
+        }
+
+        /* 创作社区 */
+        .community-section {
+            background: linear-gradient(135deg, #1a2f4a, #2c4a6e);
+            padding: 50px 0;
+            border-radius: 20px;
+            margin-bottom: 60px;
+            color: #fff;
+        }
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .community-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s;
+        }
+        .community-card:hover {
+            transform: translateY(-6px);
+        }
+        .community-card .emoji-icon {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .community-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .community-card p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .community-link {
+            color: #e8b84b;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq-section {
+            margin-bottom: 60px;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            color: #1a2f4a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-item h3::before {
+            content: "Q";
+            background: #e8b84b;
+            color: #1a2f4a;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #5a5550;
+            line-height: 1.7;
+            padding-left: 32px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #0e1a2b;
+            color: #cfd8e3;
+            padding: 40px 0 20px;
+        }
+        .footer-inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-about h3 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .footer-about p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            line-height: 1.7;
+        }
+        .footer-links h3 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .footer-links ul li {
+            margin-bottom: 6px;
+        }
+        .footer-links a {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .footer-links a:hover {
+            opacity: 1;
+            color: #e8b84b;
+        }
+        .footer-copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .works-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .category-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .update-layout {
+                grid-template-columns: 1fr;
+            }
+            .community-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .main-nav ul {
+                justify-content: center;
+                gap: 16px;
+            }
+            .header-search {
+                width: 100%;
+                max-width: 100%;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .works-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .section-title h2 {
+                font-size: 1.4rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .works-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-characters {
+                gap: 10px;
+            }
+            .char-card {
+                width: 80px;
+                padding: 14px 8px;
+            }
+            .char-avatar {
+                font-size: 2rem;
+            }
+            .update-item {
+                flex-wrap: wrap;
+            }
+            .update-status {
+                font-size: 0.7rem;
+                padding: 2px 8px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <span class="logo-icon">🏴‍☠️</span>
+            <span class="logo-text">海贼王同人<span>动漫</span>站</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#hot">热门作品</a></li>
+                <li><a href="#category">同人分类</a></li>
+                <li><a href="#update">更新榜单</a></li>
+                <li><a href="#community">创作社区</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+        <div class="header-search">
+            <input type="text" placeholder="搜索同人作品...">
+            <button type="button">🔍</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero-section">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h1>探索<span>海贼王同人动漫</span>的无限冒险</h1>
+            <p>从草帽一伙到新世界群雄，这里汇集了最精彩的海贼王二次创作作品、同人漫画连载与角色衍生故事，是每一位海米创作与交流的乐园。</p>
+            <div class="hero-badges">
+                <span class="hero-badge">🔥 同人漫画</span>
+                <span class="hero-badge">📖 衍生小说</span>
+                <span class="hero-badge">🎨 角色图鉴</span>
+                <span class="hero-badge">✍️ 自由创作</span>
+            </div>
+            <div class="btn-group">
+                <a href="#hot" class="btn-primary">开始探索</a>
+                <a href="#community" class="btn-outline">加入创作</a>
+            </div>
+        </div>
+        <div class="hero-characters">
+            <div class="char-card">
+                <div class="char-avatar">👒</div>
+                <div class="char-name">路飞</div>
+                <div class="char-role">草帽船长</div>
+            </div>
+            <div class="char-card">
+                <div class="char-avatar">🍃</div>
+                <div class="char-name">索隆</div>
+                <div class="char-role">三刀流剑士</div>
+            </div>
+            <div class="char-card">
+                <div class="char-avatar">⚡</div>
+                <div class="char-name">山治</div>
+                <div class="char-role">帅气厨师</div>
+            </div>
+            <div class="char-card">
+                <div class="char-avatar">🦊</div>
+                <div class="char-name">乔巴</div>
+                <div class="char-role">船医驯鹿</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="main-content">
+    <div class="container">
+
+        <!-- 热门作品 -->
+        <section class="hot-works" id="hot">
+            <div class="section-title">
+                <h2>🔥 热门同人作品推荐</h2>
+                <a href="#" class="more-link">查看全部 →</a>
+            </div>
+            <div class="works-grid">
+                <article class="work-card">
+                    <div class="work-cover">
+                        <span>⚓</span>
+                        <span class="work-tag">热榜</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>新世界的黎明</h3>
+                        <div class="work-meta">作者：海风 · 已完结</div>
+                        <p class="work-desc">路飞与伙伴们抵达最终之岛后的全新冒险篇章，填补空白百年历史的同人巨作。</p>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-cover">
+                        <span>⚔️</span>
+                        <span class="work-tag">连载中</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>剑士的誓言</h3>
+                        <div class="work-meta">作者：三刀流 · 更新至第32话</div>
+                        <p class="work-desc">索隆视角的成长故事，深入刻画世界第一大剑豪的追求与羁绊。</p>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-cover">
+                        <span>🍖</span>
+                        <span class="work-tag">搞笑</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>桑尼号日常</h3>
+                        <div class="work-meta">作者：橘子汽水 · 已完结</div>
+                        <p class="work-desc">轻松搞笑的草帽团日常短篇集，在伟大航路上的温馨小故事。</p>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-cover">
+                        <span>🌊</span>
+                        <span class="work-tag">冒险</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>深海之约</h3>
+                        <div class="work-meta">作者：鱼人岛 · 连载中</div>
+                        <p class="work-desc">鱼人岛与和之国之间的秘密联系，揭示古代兵器之谜的另类解读。</p>
+                    </div>
+                </article>
+                <article class="work-card">
+                    <div class="work-cover">
+                        <span>🕊️</span>
+                        <span class="work-tag">情感</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>白星公主的眼泪</h3>
+                        <div class="work-meta">作者：深海珍珠 · 已完结</div>
+                        <p class="work-desc">以白星公主为主角的感人故事，探索她与路飞相遇后的心路历程。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 同人分类 -->
+        <section class="category-section" id="category">
+            <div class="section-title">
+                <h2>📚 同人作品分类</h2>
+            </div>
+            <div class="category-pills">
+                <span class="category-pill active">全部</span>
+                <span class="category-pill">热血冒险</span>
+                <span class="category-pill">轻松搞笑</span>
+                <span class="category-pill">情感羁绊</span>
+                <span class="category-pill">战斗番外</span>
+                <span class="category-pill">if线故事</span>
+            </div>
+            <div class="category-grid">
+                <div class="category-item">
+                    <h3>🌋 热血冒险类</h3>
+                    <p>延续原作的冒险精神，讲述草帽一伙在新世界的全新征途，面对前所未有的强敌与挑战。</p>
+                    <div class="tag-list">
+                        <a href="#">新世界</a>
+                        <a href="#">最终之岛</a>
+                        <a href="#">四皇</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <h3>😄 轻松搞笑类</h3>
+                    <p>围绕草帽团成员的日常生活展开，展现他们在战斗之外的可爱一面，治愈又欢乐。</p>
+                    <div class="tag-list">
+                        <a href="#">日常</a>
+                        <a href="#">宴会</a>
+                        <a href="#">美食</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <h3>💞 情感羁绊类</h3>
+                    <p>深入挖掘角色之间的关系与情感，无论是伙伴情谊、师徒传承还是宿命对手。</p>
+                    <div class="tag-list">
+                        <a href="#">伙伴</a>
+                        <a href="#">师徒</a>
+                        <a href="#">对手</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <h3>⚡ 战斗番外类</h3>
+                    <p>聚焦于原作中未充分展开的战斗场景，补完精彩对决的细节，展现角色实力。</p>
+                    <div class="tag-list">
+                        <a href="#">能力对决</a>
+                        <a href="#">霸气</a>
+                        <a href="#">恶魔果实</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <h3>🔄 IF线故事</h3>
+                    <p>假设剧情走向不同的平行世界，比如如果艾斯没有牺牲、如果路飞成为海军等。</p>
+                    <div class="tag-list">
+                        <a href="#">艾斯存活</a>
+                        <a href="#">海军路飞</a>
+                        <a href="#">平行世界</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <h3>🎨 角色衍生类</h3>
+                    <p>以配角或反派为主角的二次创作，让每个角色都有机会展现自己的故事。</p>
+                    <div class="tag-list">
+                        <a href="#">罗</a>
+                        <a href="#">萨博</a>
+                        <a href="#">女帝</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 更新与排行榜 -->
+        <section class="update-section" id="update">
+            <div class="section-title">
+                <h2>📈 最近更新 & 人气榜</h2>
+            </div>
+            <div class="update-layout">
+                <div class="update-list">
+                    <div class="update-item">
+                        <div class="update-rank top">1</div>
+                        <div class="update-info">
+                            <h4>《剑士的誓言》第33话</h4>
+                            <div class="update-meta">三刀流 · 2小时前更新</div>
+                        </div>
+                        <span class="update-status">新章节</span>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-rank top">2</div>
+                        <div class="update-info">
+                            <h4>《深海之约》第12话</h4>
+                            <div class="update-meta">鱼人岛 · 5小时前更新</div>
+                        </div>
+                        <span class="update-status">连载中</span>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-rank top">3</div>
+                        <div class="update-info">
+                            <h4>《桑尼号日常》番外篇</h4>
+                            <div class="update-meta">橘子汽水 · 昨天更新</div>
+                        </div>
+                        <span class="update-status">番外</span>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-rank">4</div>
+                        <div class="update-info">
+                            <h4>《海军大将的野望》第8话</h4>
+                            <div class="update-meta">正义联盟 · 2天前更新</div>
+                        </div>
+                        <span class="update-status">新连载</span>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-rank">5</div>
+                        <div class="update-info">
+                            <h4>《艾斯重生》第21话</h4>
+                            <div class="update-meta">火焰之拳 · 3天前更新</div>
+                        </div>
+                        <span class="update-status">连载中</span>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-rank">6</div>
+                        <div class="update-info">
+                            <h4>《伟大航路美食记》完结篇</h4>
+                            <div class="update-meta">山治厨房 · 4天前更新</div>
+                        </div>
+                        <span class="update-status">已完结</span>
+                    </div>
+                </div>
+                <div class="ranking-box">
+                    <h3>🏆 本月人气榜</h3>
+                    <div class="ranking-item">
+                        <span class="ranking-num">1</span>
+                        <span class="ranking-title">新世界的黎明</span>
+                        <span class="ranking-score">9.8</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">2</span>
+                        <span class="ranking-title">剑士的誓言</span>
+                        <span class="ranking-score">9.6</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">3</span>
+                        <span class="ranking-title">深海之约</span>
+                        <span class="ranking-score">9.4</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">4</span>
+                        <span class="ranking-title">艾斯重生</span>
+                        <span class="ranking-score">9.1</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">5</span>
+                        <span class="ranking-title">桑尼号日常</span>
+                        <span class="ranking-score">8.9</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">6</span>
+                        <span class="ranking-title">白星公主的眼泪</span>
+                        <span class="ranking-score">8.7</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-num">7</span>
+                        <span class="ranking-title">海军大将的野望</span>
+                        <span class="ranking-score">8.5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 创作社区 -->
+        <section class="community-section" id="community">
+            <div class="container">
+                <div class="section-title" style="border-left-color: #e8b84b; margin-bottom: 30px;">
+                    <h2 style="color: #fff;">✍️ 创作者社区</h2>
+                </div>
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="emoji-icon">🎨</div>
+                        <h3>同人图鉴</h3>
+                        <p>上传和分享你的同人画作，与众多画师交流技巧，让更多人看到你的作品。</p>
+                        <a href="#" class="community-link">进入图鉴 →</a>
+                    </div>
+                    <div class="community-card">
+                        <div class="emoji-icon">📝</div>
+                        <h3>小说创作</h3>
+                        <p>发布你的同人小说，无论是短篇、长篇还是连载，都能找到读者和同好。</p>
+                        <a href="#" class="community-link">开始写作 →</a>
+                    </div>
+                    <div class="community-card">
+                        <div class="emoji-icon">💬</div>
+                        <h3>讨论广场</h3>
+                        <p>围绕海贼王同人作品展开讨论，分享你的看法与见解，结识同好伙伴。</p>
+                        <a href="#" class="community-link">参与讨论 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section" id="faq">
+            <div class="section-title">
+                <h2>❓ 常见问题</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>什么是海贼王同人动漫？</h3>
+                    <p>海贼王同人动漫是指由粉丝基于原作《海贼王》进行二次创作的动漫作品，包括漫画、动画短片、小说等多种形式，延续或改编原作的角色与世界观。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何开始创作自己的同人作品？</h3>
+                    <p>首先确定你想创作的类型和方向，可以从你最喜欢的角色或剧情切入。阅读其他优秀作品获取灵感，然后尝试创作短篇故事或单幅画作。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>同人作品是否涉及版权问题？</h3>
+                    <p>同人创作基于原作进行二次创作，属于粉丝文化的一部分。建议以非商业目的进行创作与分享，尊重原作者权益，不将同人作品用于商业用途。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>在哪里可以找到高质量的同人作品？</h3>
+                    <p>本站持续收录和推荐优质的海贼王同人作品，你可以通过热门推荐、分类浏览或站内搜索找到感兴趣的作品。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>可以转载其他平台上的同人作品吗？</h3>
+                    <p>转载他人作品前请务必获得原作者授权，并注明出处与作者信息。尊重创作者的劳动成果是社区的基本准则。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何让更多人看到我的作品？</h3>
+                    <p>积极参与社区互动，在创作时添加合适的标签，保持稳定的更新频率，并与其他创作者交流分享，都能帮助你的作品获得更多曝光。</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <h3>🏴‍☠️ 海贼王同人动漫站</h3>
+                <p>一个热爱海贼王同人创造与分享的社区平台。我们相信每一个海米心中都有属于自己的冒险故事，欢迎加入我们，一起创造无限可能。</p>
+            </div>
+            <div class="footer-links">
+                <h3>快速导航</h3>
+                <ul>
+                    <li><a href="#hot">热门作品</a></li>
+                    <li><a href="#category">同人分类</a></li>
+                    <li><a href="#update">最近更新</a></li>
+                    <li><a href="#community">创作社区</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="#">海贼王原作讨论</a></li>
+                    <li><a href="#">同人画师推荐</a></li>
+                    <li><a href="#">粉丝创作指南</a></li>
+                    <li><a href="#">社区规则</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 海贼王同人动漫站 · 仅供粉丝交流与创作分享 · 非官方站点</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+                  </html>
