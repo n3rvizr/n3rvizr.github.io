@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>91pron 新地址 - 最新入口与安全访问指南</title>
+  <meta name="description" content="91pron 新地址页面，提供最新可用的入口、浏览器配置建议、安全访问注意事项与常见问题解答。帮助用户快速找到可用站点。">
+  <meta name="keywords" content="91pron, 91pron新地址, 最新网址, 访问入口, 防劫持, 网址发布页">
+  <style>
+    /* reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #0b0e14;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: #e9edf2;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #a8c8fa;
+    }
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+      flex: 1;
+    }
+    /* header */
+    .site-header {
+      background: #11161f;
+      border-bottom: 1px solid #2a3441;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+      background: rgba(15, 20, 30, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #e2b8ff, #6ea8fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .brand small {
+      font-size: 0.75rem;
+      display: block;
+      color: #9aa7b8;
+      background: none;
+      -webkit-background-clip: initial;
+      background-clip: initial;
+      letter-spacing: normal;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #cbd5e1;
+      transition: color 0.2s;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover {
+      color: #ffffff;
+      border-bottom-color: #6ea8fe;
+    }
+    /* hero */
+    .hero {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid #1f2937;
+      background: radial-gradient(ellipse at 20% 30%, #1c2533, transparent 60%);
+    }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .hero-content {
+      flex: 1 1 300px;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #f0f4fa, #b6ccfe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #b9c7da;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #1e2c3c;
+      padding: 8px 18px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      border: 1px solid #3b4c5f;
+      color: #d9e2ef;
+      margin-bottom: 20px;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 600;
+      background: #2a3a50;
+      color: #fff;
+      transition: 0.2s;
+      border: 1px solid #405b76;
+    }
+    .btn-primary {
+      background: #1e6fd9;
+      border-color: #4c8ef7;
+      box-shadow: 0 4px 12px rgba(30, 111, 217, 0.3);
+    }
+    .btn-primary:hover {
+      background: #2b7ae6;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+    }
+    /* address card */
+    .address-box {
+      flex: 1 1 280px;
+      background: #131c28;
+      border-radius: 28px;
+      padding: 30px 28px;
+      border: 1px solid #2b3c50;
+      box-shadow: 0 20px 35px -15px rgba(0,0,0,0.6);
+    }
+    .address-box h2 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+      border-left: 4px solid #4c8ef7;
+      padding-left: 16px;
+    }
+    .url-item {
+      background: #0f1722;
+      padding: 14px 18px;
+      border-radius: 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #2b3c53;
+    }
+    .url-item .domain {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #b9d9ff;
+      letter-spacing: 0.5px;
+    }
+    .copy-btn {
+      background: #274a6b;
+      border: none;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .copy-btn:hover {
+      background: #336a99;
+    }
+    .check-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #8ab4f8;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    /* panel */
+    .panel-section {
+      padding: 50px 0 30px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      letter-spacing: -0.3px;
+      border-bottom: 2px solid #253244;
+      padding-bottom: 16px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin: 30px 0 40px;
+    }
+    .feature-card {
+      background: #101a26;
+      border-radius: 20px;
+      padding: 24px 20px;
+      border: 1px solid #253241;
+      transition: 0.2s;
+    }
+    .feature-card:hover {
+      border-color: #3f5f80;
+      background: #0f1e2e;
+    }
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #c6dcff;
+    }
+    .feature-card p {
+      color: #a7b7ce;
+      font-size: 0.95rem;
+    }
+    /* steps */
+    .step-list {
+      background: #0f1722;
+      border-radius: 28px;
+      padding: 30px;
+      margin: 30px 0;
+      border: 1px solid #2b3a4e;
+    }
+    .step-item {
+      display: flex;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid #1e2d3d;
+    }
+    .step-item:last-child {
+      border: none;
+    }
+    .step-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #1a3a5a;
+      border-radius: 14px;
+      font-weight: 700;
+      color: #d4e5ff;
+      flex-shrink: 0;
+    }
+    .step-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+    .step-content p {
+      color: #a5b8cf;
+    }
+    /* faq */
+    .faq-wrap {
+      background: #111b27;
+      border-radius: 28px;
+      padding: 30px;
+      margin: 40px 0;
+    }
+    details {
+      border-bottom: 1px solid #243141;
+      padding: 18px 0;
+    }
+    summary {
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: #d3e0f2;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary:after {
+      content: '+';
+      font-size: 2rem;
+      color: #7f9ec0;
+      margin-left: 20px;
+    }
+    details[open] summary:after {
+      content: '–';
+    }
+    .faq-answer {
+      margin-top: 14px;
+      color: #b2c3da;
+      padding-right: 30px;
+    }
+    /* footer */
+    .site-footer {
+      border-top: 1px solid #1f2a38;
+      padding: 30px 0;
+      background: #0d121b;
+      margin-top: 40px;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #7e8ea3;
+    }
+    .footer-links a {
+      margin-left: 18px;
+    }
+    /* responsive */
+    @media (max-width: 700px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .address-box {
+        padding: 20px;
+      }
+      .url-item {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .step-list, .faq-wrap {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper header-inner">
+      <div class="brand">91<span>PRON</span> 新地址<small>官方发布 · 安全访问</small></div>
+      <nav class="nav-links">
+        <a href="#latest">最新入口</a>
+        <a href="#guide">访问指南</a>
+        <a href="#faq">常见问题</a>
+        <a href="#notice">安全须知</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO + 最新地址卡片 -->
+    <section class="hero">
+      <div class="wrapper hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">✨ 2025年7月 已验证可用</div>
+          <h1>91pron 新地址<br>安全入口发布页</h1>
+          <p>我们持续监测并更新可用的访问地址，解决域名被屏蔽、劫持等问题。请收藏本页，随时获取最新入口。</p>
+          <div class="btn-group">
+            <a href="#latest" class="btn btn-primary">查看最新地址</a>
+            <a href="#guide" class="btn btn-outline">访问教程</a>
+          </div>
+        </div>
+        <div class="address-box" id="latest">
+          <h2>📡 当前可用 · 新地址</h2>
+          <div class="url-item">
+            <span class="domain">91pron.la</span>
+            <button class="copy-btn" onclick="copyText('91pron.la')">复制</button>
+          </div>
+          <div class="url-item">
+            <span class="domain">91pnew.com</span>
+            <button class="copy-btn" onclick="copyText('91pnew.com')">复制</button>
+          </div>
+          <div class="url-item">
+            <span class="domain">91pr0n.cc</span>
+            <button class="copy-btn" onclick="copyText('91pr0n.cc')">复制</button>
+          </div>
+          <div class="url-item">
+            <span class="domain">my91pron.net</span>
+            <button class="copy-btn" onclick="copyText('my91pron.net')">复制</button>
+          </div>
+          <a href="#guide" class="check-link">如果无法访问，请查看下方设置教程 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 功能特性 资讯卡片 -->
+    <section class="panel-section" id="notice">
+      <div class="wrapper">
+        <h2 class="section-title">🔐 安全访问须知</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>✔ 官方验证</h3>
+            <p>所有地址均经过多次连通性测试，并定期更新。建议使用备用网络访问。</p>
+          </div>
+          <div class="feature-card">
+            <h3>⚠️ 谨防钓鱼</h3>
+            <p>不要从陌生链接或邮件进入，认准本页发布的域名。避免输入个人隐私。</p>
+          </div>
+          <div class="feature-card">
+            <h3>🔄 更新机制</h3>
+            <p>部分域名可能被运营商干扰，我们会在24小时内同步最新镜像入口。</p>
+          </div>
+          <div class="feature-card">
+            <h3>⚙️ 浏览器建议</h3>
+            <p>使用Chrome/Edge/Firefox并开启HTTPS安全解析，可提升访问稳定性。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 访问指南 steps -->
+    <section class="wrapper" id="guide">
+      <h2 class="section-title">🧭 访问指南 & 新地址获取方式</h2>
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>直接点击/复制上方地址</h3>
+            <p>优先尝试第一个域名，如果无法打开，依次尝试其他地址。部分网络环境需要切换WiFi或4G/5G。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>清除DNS缓存 (Windows/Mac)</h3>
+            <p>按 Win+R 输入 cmd 后执行 ipconfig /flushdns；Mac 使用 sudo killall -HUP mDNSResponder。可解决解析劫持。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>修改DNS为公共DNS</h3>
+            <p>推荐使用 1.1.1.1 或 8.8.8.8，能有效防止域名污染。在系统网络设置中修改IPv4 DNS。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>使用无痕/隐私窗口</h3>
+            <p>部分浏览器插件可能造成干扰，请尝试无痕模式访问，并关闭VPN或代理后再试。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h3>保存本页，每日刷新</h3>
+            <p>我们几乎每日更新地址列表。建议按 Ctrl+D 收藏本页，方便随时获取最新入口。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="wrapper" id="faq">
+      <h2 class="section-title">❓ 常见问题 (FAQ)</h2>
+      <div class="faq-wrap">
+        <details open>
+          <summary>为什么之前保存的91pron地址打不开了？</summary>
+          <div class="faq-answer">由于网络政策或运营商限制，域名可能会间歇性被屏蔽。本页面保持高频率验证并更新，建议收藏本页作为唯一入口。</div>
+        </details>
+        <details>
+          <summary>新地址需要翻墙才能访问吗？</summary>
+          <div class="faq-answer">大部分情况下不需要额外工具，但如果你的地区网络限制严重，使用公共DNS或切换网络通常可以解决。我们不推荐使用来源不明的软件。</div>
+        </details>
+        <details>
+          <summary>如何确认我访问的是正版91pron？</summary>
+          <div class="faq-answer">认准页面布局与官方标识。本页发布的地址都是经过多次验证的正式入口，不要相信任何需要付费解锁的弹窗。</div>
+        </details>
+        <details>
+          <summary>新地址多久更新一次？</summary>
+          <div class="faq-answer">我们监测到失效后会立即测试备用地址，通常几小时内更新。建议每天刷新一次本页面，获取最新可用域名。</div>
+        </details>
+        <details>
+          <summary>在手机上可以正常访问吗？</summary>
+          <div class="faq-answer">可以。安卓和iOS均建议使用自带浏览器或Chrome/Safari，若打不开请尝试开启飞行模式后关闭，重新连接网络。</div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div>© 91pron 新地址发布页 · 请收藏备用</div>
+      <div class="footer-links">
+        <a href="#latest">最新域名</a>
+        <a href="#guide">帮助中心</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 复制功能
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert('地址 ' + text + ' 已复制，请粘贴到浏览器打开');
+        }).catch(() => {
+          fallbackCopy(text);
+        });
+      } else {
+        fallbackCopy(text);
+      }
+    }
+    function fallbackCopy(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert('地址 ' + text + ' 已复制，请粘贴到浏览器打开');
+      } catch (err) {
+        alert('复制失败，请手动复制地址: ' + text);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // 平滑滚动(不影响原有锚点)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.length > 1) {
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+  <!-- 固定广告脚本 -->
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
